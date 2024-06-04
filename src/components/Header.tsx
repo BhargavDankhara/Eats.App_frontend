@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import MobileNav from "./MobileNav"
+import MainNave from "./MainNave"
 
 const Header = () => {
     return (
@@ -8,6 +10,12 @@ const Header = () => {
                     className="text-3xl font-bold tracking-tight text-orange-500">
                     Eats.com
                 </Link>
+                <div className="md:hidden">
+                    <MobileNav />
+                </div>
+                <div className="hidden md:block">
+                    <MainNave />
+                </div>
             </div>
         </div>
     )
