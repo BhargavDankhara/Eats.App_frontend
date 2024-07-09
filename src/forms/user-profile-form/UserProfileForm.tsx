@@ -17,7 +17,7 @@ import { z } from "zod";
 const formSchema = z.object({
   email: z.string().optional(),
   name: z.string().min(1, "name is required"),
-  address: z.string().min(1, "address is required"),
+  addressLine: z.string().min(1, "addressLine is required"),
   city: z.string().min(1, "city is required"),
   country: z.string().min(1, "country is required"),
 });
@@ -73,10 +73,10 @@ const UserProfileForm = ({ onSave, isLoading }: Props) => {
         <div className="flex flex-col md:flex-row gap-4">
           <FormField
             control={form.control}
-            name="address"
+            name="addressLine"
             render={({ field }) => (
               <FormItem className="flex-1">
-                <FormLabel>Address</FormLabel>
+                <FormLabel>AddressLine</FormLabel>
                 <FormControl>
                   <Input {...field} className="bg-white" />
                 </FormControl>
