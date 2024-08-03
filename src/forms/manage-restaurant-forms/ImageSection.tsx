@@ -29,7 +29,7 @@ export const ImageSection = () => {
                 <Input
                   className="bg-white"
                   type="file"
-                  accept=".jpg, .jepg, .png"
+                  accept=".jpg, .jpeg, .png"
                   onChange={(event) =>
                     field.onChange(
                       event.target.files ? event.target.files[0] : null

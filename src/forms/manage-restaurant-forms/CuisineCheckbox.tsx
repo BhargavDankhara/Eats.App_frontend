@@ -4,7 +4,7 @@ import { ControllerRenderProps, FieldValues } from "react-hook-form";
 
 type Props = {
   cuisine: string;
-  field: ControllerRenderProps<FieldValues, "cuisiens">;
+  field: ControllerRenderProps<FieldValues, "cuisines">;
 };
 
 const CuisineCheckbox = ({ cuisine, field }: Props) => {
